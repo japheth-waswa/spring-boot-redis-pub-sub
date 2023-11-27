@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+
+  spring_demo_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: japhethwaswa/springdemo:1
+    expose:
+      - 8080
+    ports:
+      - 1558:8080
+    restart: always
